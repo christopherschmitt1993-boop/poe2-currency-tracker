@@ -323,9 +323,13 @@ def main():
                 print(f"  Abrufen: {category} ...")
                 results, core = fetch_category(league_id, category, league_history, now)
                 categories_data[category] = results
-                # Wechselkurse muessen nur einmal pro Liga extrahiert werden -
-                # sie sind nicht kategorie-spezifisch, sondern liga-weit gueltig.
-                if exchange_rates is None:
+                # WICHTIG: Wechselkurse duerfen ausschliesslich aus der
+                # "Currency"-Kategorie kommen, niemals als Fallback aus einer
+                # anderen Kategorie (deren interne Referenzwerte nicht
+                # zwingend den echten Divine/Chaos/Exalted-Marktkurs
+                # widerspiegeln). Schlaegt "Currency" fehl, bleibt
+                # exchange_rates lieber leer (Anzeige "-") statt falsch.
+                if category == "Currency":
                     exchange_rates = extract_exchange_rates(core)
             except (HTTPError, URLError) as exc:
                 print(f"  WARNUNG: {category} ({league_id}) konnte nicht geladen werden: {exc}", file=sys.stderr)
