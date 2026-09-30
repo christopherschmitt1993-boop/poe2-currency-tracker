@@ -81,13 +81,6 @@ HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
 # Trend-Zeitfenster (in Stunden) fuer die Anzeige im Dashboard
 TREND_WINDOWS = {"1h": 1, "3h": 3, "3d": 72, "7d": 168}
 
-# Maximal erlaubte Abweichung (in Stunden) zwischen dem gewuenschten Zeitpunkt
-# und dem tatsaechlich gefundenen History-Eintrag. Wird diese Toleranz
-# ueberschritten (z.B. weil das Skript laengere Zeit nicht lief), wird der
-# Trend lieber als "nicht verfuegbar" (None) ausgegeben, statt einen
-# irrefuehrenden Wert auf Basis eines viel zu alten Snapshots zu zeigen.
-TREND_TOLERANCE_HOURS = {"1h": 1, "3h": 2, "3d": 12, "7d": 24}
-
 # Etwas Puffer ueber 7 Tage hinaus behalten, falls einzelne Laeufe ausfallen
 HISTORY_RETENTION_HOURS = 24 * 8
 
@@ -122,24 +115,21 @@ def value_at_or_before(entries: list, target_iso: str):
 
 
 def compute_trends(entries: list, current_value: float, now: datetime) -> dict:
+    """Berechnet die Preis-Trends je Zeitfenster.
+
+    Die GitHub-Actions-Laeufe finden nicht exakt stundengenau statt (Cron-Jobs
+    koennen ein paar Minuten bis gelegentlich deutlich spaeter starten). Statt
+    bei jeder kleinen Abweichung vom Wunschzeitpunkt "kein Trend verfuegbar"
+    zu zeigen, wird im Zweifelsfall einfach der naechstgelegene verfuegbare
+    History-Eintrag vor dem Zielzeitpunkt verwendet (im Normalfall also der
+    Wert aus dem letzten vorherigen Lauf) - lieber ein leicht ungenauer
+    Zeitbezug als ein staendig fehlender Trend."""
     trends = {}
     for label, hours_ago in TREND_WINDOWS.items():
-        target_time = now - timedelta(hours=hours_ago)
-        target_iso = target_time.isoformat(timespec="seconds")
-        old_value, found_iso = value_at_or_before(entries, target_iso)
+        target_iso = (now - timedelta(hours=hours_ago)).isoformat(timespec="seconds")
+        old_value, _found_iso = value_at_or_before(entries, target_iso)
 
         if old_value is None or old_value == 0 or current_value is None:
-            trends[label] = None
-            continue
-
-        # Toleranzpruefung: liegt der gefundene Snapshot zu weit vom
-        # gewuenschten Zeitpunkt entfernt (z.B. weil das Skript zwischenzeitlich
-        # nicht lief), lieber None statt eines irrefuehrenden Wertes liefern.
-        found_time = datetime.fromisoformat(found_iso)
-        deviation_hours = abs((target_time - found_time).total_seconds()) / 3600
-        tolerance = TREND_TOLERANCE_HOURS.get(label, hours_ago)
-
-        if deviation_hours > tolerance:
             trends[label] = None
         else:
             trends[label] = round((current_value - old_value) / old_value * 100, 2)
