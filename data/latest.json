@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T06:26:56+00:00",
+  "generated_at": "2026-10-03T07:21:13+00:00",
   "currencies": [
     "chaos",
     "exalted",
@@ -28635,7 +28635,7 @@
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvRXhwZWRpdGlvbkdlbUN1cnJlbmN5UG93ZXJmdWwiLCJzY2FsZSI6MSwicmVhbG0iOiJwb2UyIn1d/43be23e971/ExpeditionGemCurrencyPowerful.png",
             "values": {
               "chaos": 1707.65,
-              "exalted": 196344.9,
+              "exalted": 197041.9,
               "divine": 697
             },
             "listingVolumePrimary": 464.7,
@@ -28651,15 +28651,15 @@
             "name": "Uhtred's Saga",
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvU3BlY2lhbEV4cGVkaXRpb25QYWdlNCIsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/0470c24911/SpecialExpeditionPage4.png",
             "values": {
-              "chaos": 145.971,
-              "exalted": 16783.686,
-              "divine": 59.58
+              "chaos": 142.9575,
+              "exalted": 16495.545,
+              "divine": 58.35
             },
-            "listingVolumePrimary": 258.2,
+            "listingVolumePrimary": 301.5,
             "trend": {
-              "1h": 0.0,
-              "3h": 0.07,
-              "3d": 20.97,
+              "1h": -2.06,
+              "3h": -2.0,
+              "3d": 18.48,
               "7d": null
             }
           },
@@ -28668,15 +28668,15 @@
             "name": "Olroth's Saga",
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvU3BlY2lhbEV4cGVkaXRpb25QYWdlMSIsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/e4b423d772/SpecialExpeditionPage1.png",
             "values": {
-              "chaos": 33.5405,
-              "exalted": 3856.473,
-              "divine": 13.69
+              "chaos": 36.603,
+              "exalted": 4223.538,
+              "divine": 14.94
             },
-            "listingVolumePrimary": 36.5,
+            "listingVolumePrimary": 42.33,
             "trend": {
-              "1h": 0.0,
-              "3h": 1.11,
-              "3d": 14.08,
+              "1h": 9.13,
+              "3h": 10.34,
+              "3d": 24.5,
               "7d": null
             }
           },
@@ -28686,7 +28686,7 @@
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvU3BlY2lhbEV4cGVkaXRpb25QYWdlMiIsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/057899d625/SpecialExpeditionPage2.png",
             "values": {
               "chaos": 26.019,
-              "exalted": 2991.654,
+              "exalted": 3002.274,
               "divine": 10.62
             },
             "listingVolumePrimary": 14.17,
@@ -28702,15 +28702,15 @@
             "name": "Void Flux",
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvQXJjYW5lRmx1eCIsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/05c5ace7f7/ArcaneFlux.png",
             "values": {
-              "chaos": 20.4085,
-              "exalted": 2346.561,
-              "divine": 8.33
+              "chaos": 25.48,
+              "exalted": 2940.08,
+              "divine": 10.4
             },
-            "listingVolumePrimary": 4.17,
+            "listingVolumePrimary": 8.67,
             "trend": {
-              "1h": 0.0,
-              "3h": 0.0,
-              "3d": 733.0,
+              "1h": 24.85,
+              "3h": 24.85,
+              "3d": 940.0,
               "7d": null
             }
           },
@@ -28719,15 +28719,15 @@
             "name": "Expedition Logbook",
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvRXhwZWRpdGlvbkxvZ2Jvb2s1Iiwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/841a5e9622/ExpeditionLogbook5.png",
             "values": {
-              "chaos": 15.5085,
-              "exalted": 1783.161,
-              "divine": 6.33
+              "chaos": 15.7045,
+              "exalted": 1812.107,
+              "divine": 6.41
             },
-            "listingVolumePrimary": 111.8,
+            "listingVolumePrimary": 143.2,
             "trend": {
-              "1h": 0.0,
-              "3h": -8.79,
-              "3d": -22.71,
+              "1h": 1.26,
+              "3h": -7.64,
+              "3d": -21.73,
               "7d": null
             }
           },
@@ -28737,7 +28737,7 @@
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvQXJjYW5lRmx1eEZpcmUiLCJzY2FsZSI6MSwicmVhbG0iOiJwb2UyIn1d/5894d96668/ArcaneFluxFire.png",
             "values": {
               "chaos": 9.8,
-              "exalted": 1126.8,
+              "exalted": 1130.8,
               "divine": 4
             },
             "listingVolumePrimary": 0.6667,
@@ -28753,15 +28753,15 @@
             "name": "Medved's Saga",
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvU3BlY2lhbEV4cGVkaXRpb25QYWdlMyIsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/9eb5b576fc/SpecialExpeditionPage3.png",
             "values": {
-              "chaos": 5.7085,
-              "exalted": 656.361,
-              "divine": 2.33
+              "chaos": 7.1295,
+              "exalted": 822.657,
+              "divine": 2.91
             },
-            "listingVolumePrimary": 11.67,
+            "listingVolumePrimary": 5.33,
             "trend": {
-              "1h": 0.0,
-              "3h": -6.05,
-              "3d": -70.77,
+              "1h": 24.89,
+              "3h": 17.34,
+              "3d": -63.49,
               "7d": null
             }
           },
@@ -28771,7 +28771,7 @@
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvQXJjYW5lRmx1eENvbGQiLCJzY2FsZSI6MSwicmVhbG0iOiJwb2UyIn1d/8be4ea67ff/ArcaneFluxCold.png",
             "values": {
               "chaos": 4.9,
-              "exalted": 563.4,
+              "exalted": 565.4,
               "divine": 2
             },
             "listingVolumePrimary": 0.3333,
@@ -28788,7 +28788,7 @@
             "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbjIvQXJjYW5lRmx1eExpZ2h0bmluZyIsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/6f9758e0a3/ArcaneFluxLightning.png",
             "values": {
               "chaos": 2.45,
-              "exalted": 281.7,
+              "exalted": 282.7,
               "divine": 1
             },
             "listingVolumePrimary": 0.1667,
